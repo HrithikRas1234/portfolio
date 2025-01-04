@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(10, 9, 32);
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(30, 30, 87);
+    height: 8rem;
+    width: 100%;
+    overflow: hidden;
+    
+}
+nav img{
+    width: 18.9rem;
+    color: white;
+    background-color: #5c5963;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 2.3rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+nav ul li a:hover{
+    color: rgb(141, 101, 208);
+    font-size: 2rem;
+}
+.nav-toggle{
+    display: none;
+}
+
+.left{
+    font-size: 2.4rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 13.9rem 0;
+    align-items: center;
+    
+}
+.firstSection > div{
+    width: 18.75%;
+
+}
+.leftSection{
+
+    font-size: 4.8rem;
+
+}
+.leftSection .button{
+    padding: 5rem 0;
+}
+.leftSection .btn{
+padding: 1.2rem;
+background-color: #1e2167;
+color: white;
+border: .2rem solid white;
+font-size: 2rem;
+border-radius: .6rem;
+cursor: pointer;
+
+}
+.rightSection img{
+    width: 110%;
+}
+.purple{
+    color: rgb(164, 99, 224);
+}
+#element{
+    color: rgb(164, 99, 224);
+}
+.secondSection{
+    max-width: 115.2rem;
+    margin: auto;
+    height: 72rem;
+    margin-left: 8.4rem;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.text-grey{
+    color: gray;
+}
+.secondSection h1{
+    font-size: 2.5rem;
+}
+main hr{
+    border:0;
+    background-color: rgb(164, 99, 224);
+    height:.12rem;
+    margin:4rem 8.4rem;
+}
+.secondSection .boxV{
+    background-color:white;
+    width:157rem;
+    height: .2rem;
+    margin-top: 5.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.secondSection .vertical{
+    height: 9.3rem;
+    width:.1rem;
+    background-color: white;
+    margin:0 20rem;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.image-top{
+    width: 2.3rem;
+    position:relative;
+    top: -3.2rem;
+    left: -.9rem;
+}
+.vertical-text{
+    position: relative;
+    top: 7.5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    left: -5rem;
+}
+.vertical-desc{
+    position: relative;
+    top: 8.9rem;
+    color: grey;
+    width: 15rem;
+    font-size: 1.2rem;
+    left: -5rem;
+}
+.Internship{
+    color:rgb(164, 99, 224)
+}
+
+.cardnone{
+    display: none;
+}
+footer{
+    background-color: #0e0e1a;
+
+}
+.footer{
+    display: flex;
+    padding: 2.3rem 12rem;
+    justify-content: space-evenly;
+    
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 22.3rem;
+}
+footer .footer-copyrights{
+    text-align: center;
+    color: grey;
+    padding: 1.2rem 0;
+    font-size: 1.2rem;
+
+}
+.space{
+    margin: 6rem 0;
+    font-size: 1.4rem;
+}
+
+
+    .card.text-center{
+        border-radius: 10px;
+        position: relative;
+    }
+    @property --angle{
+        syntax: "<angle>";
+        initial-value: 0deg;
+        inherits: false;
+    }
+    .card.text-center::after, .card.text-center::before{
+        content:'';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-image: conic-gradient(from var(--angle), red,blue,green,orange,pink);
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 5px;
+        border-radius: 10px;
+        animation: 3s spin linear infinite;
+    }
+    
+    .card.text-center::before{
+        filter: blur(3rem);
+        opacity: 100;
+    }
+    @keyframes spin{
+        from{
+            --angle:0deg;
+        }
+        to{
+            --angle: 360deg;
+        }
+    }
+    @media screen and (max-width:1165px) and (min-width:1034px)
+    {
+        .cardnone{
+            display: block;
+        }
+        .secondSection{
+            display: none;
+        }
+    }
+    
+
+
+    @media screen and (max-width: 845px){
+        nav{
+            width: 180rem;
+            flex-direction: column;
+            height: 16rem;
+        }
+        .cardnone{
+            display: block;
+        }
+        head{
+            width:20px;
+        }
+        .secondSection{
+            display: none;
+        }
+        .boxV{
+            width: 45rem;
+        }
+        .secondSection .vertical
+        {
+            
+                display: flex;
+                
+            }
+        }
+
+
+        .image-top1{
+            width: 2.5rem;
+            
+            position:relative;
+        }
+        @property --angle{
+            syntax: "<angle>";
+            initial-value: 0deg;
+            inherits: false;
+        }
+        .card.text-center1::after, .card.text-center1::before{
+            content:'';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: conic-gradient(from var(--angle), rgb(0, 255, 47),rgb(34, 148, 170));
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            z-index: -1;
+            padding: 5px;
+            border-radius: 10px;
+            animation: 3s spin linear infinite;
+        }
+        
+        .card.text-center1::before{
+            filter: blur(3rem);
+            opacity: 100;
+        }
+        @keyframes spin{
+            from{
+                --angle:0deg;
+            }
+            to{
+                --angle: 360deg;
+            }
+        }
+
+
+.hover-link{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+ @media screen and (max-width: 523px){
+    nav{
+        display: none;
+    }
+    .nav-toggle{
+        display: block;
+    }
+
+ }
+
+ @media  screen and (max-width:235px) {
+    .rightSection img{
+        display: none;
+    }
+ }
+

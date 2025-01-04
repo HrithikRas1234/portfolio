@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+.nav-text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: fantasy;
+    color: #79dcdc;
+    font-size: xxx-large;
+}
+.contact-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+.col-m-8{
+    background-image: url("./contact.jpg");
+}

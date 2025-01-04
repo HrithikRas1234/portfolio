@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+.body{
+    background-image:url('./bg2.jpg');
+}
+.nav-text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: fantasy;
+    font-size: xx-large;
+    color: #79dcdc;
+}
+.rightSection img{
+    width: 37%;
+    display: flex;
+
+}
+.lead{
+    margin-bottom: 40px;
+}

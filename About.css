@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+
+.card-text{
+    color: rgb(171, 106, 171);
+}
+.card-body{
+    color: #821d53; ;
+}
+.svg1{
+    background-color:black;
+}
+.svg2{
+    background-color: rgb(130, 170, 91);
+    margin-bottom: 4px;
+    margin-right: 3px;
+    height: 13px;
+}
+.link{
+    color: blueviolet;
+}
+button{
+    border: 2px solid rgb(83, 104, 133);
+    background-color: cadetblue;
+}
