@@ -13,14 +13,13 @@
     margin-top: 8px;
     color: rgb(16, 145, 143);
 }
-.but{
-    margin-right: 50px;
-}
 button{
     border: 1px solid #201c2a;
     background-color: rgb(148 150 115);
     
 }
+
+
 nav{
     display: flex;
     background-color: rgb(30, 30, 87);
@@ -31,3 +30,42 @@ nav{
 .navbar-brand{
     color: chocolate ;
 }
+
+@media screen and (max-width:330px){
+   .btn-outline-success{
+    margin: -29px;
+    margin-left: 100px;
+   }
+    }
+@media screen and (max-width:770px){
+   .btn-outline-success{
+    margin: -5px;
+   }
+    }
+@media screen and (max-width:587px){
+   .btn-outline-success{
+    margin: -6px;
+   }
+    }
+@media screen and (max-width:573px){
+   .btn-outline-success{
+    margin: -42px;
+    margin-left: 350px;
+
+   }
+    }
+@media screen and (max-width:450px){
+   .btn-outline-success{
+    margin: -42px;
+    margin-left: 215px;
+
+   }
+    }
+@media screen and (max-width:320px){
+   .btn-outline-success{
+    margin: -42px;
+    margin-left: 100px;
+
+   }
+    }
+
